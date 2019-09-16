@@ -2,29 +2,23 @@
 <html>
   <head>
     <title>Tetris Canvas</title>
-    <style>
-      body {
-        background: #202028;
-        color: #fff;
-        font-family: sans-serif;
-        font-size: 2em;
-        text-align: center;
-      }
-
-      canvas {
-        border: 0.2em solid #fff;
-        margin-top: 2em;
-      }
-
-      div#score_box {
-        margin-top: 2em;
-      }
-    </style>
+    <link
+      href="https://fonts.googleapis.com/css?family=Teko&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <div id="score_box">Your Score: <span id="score"></span></div>
 
     <canvas id="tetris" width="240" height="400"></canvas>
+
+    <div id="description">
+      <ul>
+        <li>↓ : down / → : right / ← : left</li>
+        <li>W : rotate right / Q : rotate left</li>
+      </ul>
+    </div>
     <script src="js/tetris.js"></script>
   </body>
 </html>
