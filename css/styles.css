@@ -15,6 +15,26 @@ canvas {
 div#score_box {
   margin-top: 2em;
 }
+div#btn_box {
+  margin-top: 0.5em;
+}
+
+a#btn {
+  color: #fff;
+  display: inline-block;
+  font-size: 0.8em;
+  text-decoration: none;
+  padding: 0.4em 0.8em;
+  background-color: blue;
+  border-bottom: solid 6px rgb(70, 70, 204);
+  border-radius: 0.5em;
+  letter-spacing: 0.1em;
+}
+
+a#btn:active {
+  transform: translateY(6px);
+  border-bottom: none;
+}
 
 #description {
   width: 600px;
