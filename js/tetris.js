@@ -207,6 +207,14 @@ document.addEventListener("keydown", e => {
   }
 });
 
-playerReset();
-updateScore();
-update();
+function toggleBtn() {
+  const btn = document.getElementById("btn");
+  btn.innerText = "RESET";
+}
+
+function init() {
+  playerReset();
+  updateScore();
+  update();
+  toggleBtn();
+}

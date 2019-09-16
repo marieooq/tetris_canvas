@@ -2,27 +2,54 @@
 <html>
   <head>
     <title>Tetris Canvas</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton&display=swap"
+      rel="stylesheet"
+    />
     <style>
       body {
         background: #202028;
         color: #fff;
-        font-family: sans-serif;
+        font-family: "Anton", sans-serif;
         font-size: 2em;
         text-align: center;
       }
 
       canvas {
         border: 0.2em solid #fff;
-        margin-top: 2em;
+        margin-top: 1em;
       }
 
       div#score_box {
         margin-top: 2em;
       }
+      div#btn_box {
+        margin-top: 1em;
+      }
+
+      a#btn {
+        display: inline-block;
+        color: #fff;
+        font-size: 0.8em;
+        text-decoration: none;
+        padding: 0.4em 0.8em;
+        background-color: blue;
+        border-bottom: solid 6px rgb(70, 70, 204);
+        border-radius: 0.5em;
+        letter-spacing: 0.1em;
+      }
+
+      a#btn:active {
+        transform: translateY(6px);
+        border-bottom: none;
+      }
     </style>
   </head>
   <body>
-    <div id="score_box">Your Score: <span id="score"></span></div>
+    <div id="score_box">Your Score : <span id="score"></span></div>
+    <div id="btn_box">
+      <a href="#" onclick="init()" id="btn">START</a>
+    </div>
 
     <canvas id="tetris" width="240" height="400"></canvas>
     <script src="js/tetris.js"></script>
