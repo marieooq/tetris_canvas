@@ -2,48 +2,15 @@
 <html>
   <head>
     <title>Tetris Canvas</title>
-    <link
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- <link
       href="https://fonts.googleapis.com/css?family=Anton&display=swap"
       rel="stylesheet"
+    /> -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Anton|Teko&display=swap"
+      rel="stylesheet"
     />
-    <style>
-      body {
-        background: #202028;
-        color: #fff;
-        font-family: "Anton", sans-serif;
-        font-size: 2em;
-        text-align: center;
-      }
-
-      canvas {
-        border: 0.2em solid #fff;
-        margin-top: 1em;
-      }
-
-      div#score_box {
-        margin-top: 2em;
-      }
-      div#btn_box {
-        margin-top: 1em;
-      }
-
-      a#btn {
-        display: inline-block;
-        color: #fff;
-        font-size: 0.8em;
-        text-decoration: none;
-        padding: 0.4em 0.8em;
-        background-color: blue;
-        border-bottom: solid 6px rgb(70, 70, 204);
-        border-radius: 0.5em;
-        letter-spacing: 0.1em;
-      }
-
-      a#btn:active {
-        transform: translateY(6px);
-        border-bottom: none;
-      }
-    </style>
   </head>
   <body>
     <div id="score_box">Your Score : <span id="score"></span></div>
@@ -52,6 +19,13 @@
     </div>
 
     <canvas id="tetris" width="240" height="400"></canvas>
+
+    <div id="description">
+      <ul>
+        <li>↓ : down / → : right / ← : left</li>
+        <li>W : rotate right / Q : rotate left</li>
+      </ul>
+    </div>
     <script src="js/tetris.js"></script>
   </body>
 </html>

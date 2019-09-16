@@ -1,0 +1,59 @@
+body {
+  background: #202028;
+  color: #fff;
+  font-family: "Anton", sans-serif;
+  font-size: 2em;
+  text-align: center;
+}
+
+canvas {
+  border: 0.2em solid #fff;
+  margin-top: 1em;
+}
+
+div#score_box {
+  margin-top: 2em;
+}
+div#btn_box {
+  margin-top: 0.5em;
+}
+
+a#btn {
+  color: #fff;
+  display: inline-block;
+  font-size: 0.8em;
+  text-decoration: none;
+  padding: 0.4em 0.8em;
+  background-color: blue;
+  border-bottom: solid 6px rgb(70, 70, 204);
+  border-radius: 0.5em;
+  letter-spacing: 0.1em;
+}
+
+a#btn:active {
+  transform: translateY(6px);
+  border-bottom: none;
+}
+
+#description {
+  width: 600px;
+  margin: 0 auto;
+  font-size: 0.6em;
+  font-family: "Teko", sans-serif;
+  letter-spacing: 0.06em;
+  font-weight: lighter;
+}
+
+#description ul {
+  padding: 0;
+  width: 300px;
+  list-style: none;
+  margin: 0 auto;
+}
+
+#description {
+  padding: 0;
+  width: 300px;
+  list-style: none;
+  margin: 0 auto;
+}
